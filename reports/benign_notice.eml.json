@@ -1,0 +1,48 @@
+{
+  "input_file": "sample_emls/benign_notice.eml",
+  "headers": {
+    "from": "Example Support <support@example.com>",
+    "reply_to": "Example Support <support@example.com>",
+    "return_path": "<bounce@example.com>",
+    "subject": "Account Notice (Benign)",
+    "date": "Tue, 03 Feb 2026 10:15:00 -0000",
+    "message_id": "<benign-001@example.com>"
+  },
+  "received": {
+    "hops": [
+      {
+        "index": 1,
+        "raw": "from mail.example.com (192.0.2.10) by mx.example.com with ESMTP; Tue, 03 Feb 2026 10:15:00 -0000",
+        "ips": [
+          "192.0.2.10"
+        ]
+      }
+    ],
+    "anomalies": [
+      "Hop 1: private IP(s) 192.0.2.10",
+      "Only one hop found in Received headers"
+    ]
+  },
+  "display_name_mismatch": [],
+  "lookalike_domains": [],
+  "auth_results": {
+    "found": true,
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "raw": "mx.example.com; spf=pass smtp.mailfrom=example.com; dkim=pass; dmarc=pass"
+  },
+  "urls": [
+    {
+      "url": "https://example.com/help",
+      "domain": "example.com",
+      "scheme": "https",
+      "path": "/help",
+      "flags": [],
+      "homoglyph_matches": []
+    }
+  ],
+  "attachments": [],
+  "saved_attachments": [],
+  "errors": []
+}

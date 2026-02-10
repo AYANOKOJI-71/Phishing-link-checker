@@ -1,0 +1,9 @@
+[project]
+name = "phish-analyzer"
+version = "0.1.0"
+description = "CLI tool to analyze phishing .eml files"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+phish-analyzer = "phish_analyzer.cli:main"
